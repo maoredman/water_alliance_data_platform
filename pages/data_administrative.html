@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>資料 - 行政類</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">水聯盟 - 資料平台</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> 首頁</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> 資料清單<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="data_prevent_disaster.html">水利防救災</a>
+                                </li>
+                                <li>
+                                    <a href="data_resource_use.html">水資源利用</a>
+                                </li>
+                                <li>
+                                    <a href="data_environment_sensitive.html">水環境敏感</a>
+                                </li>
+                                <li>
+                                    <a href="data_geo_info.html">水利地理資訊</a>
+                                </li>
+                                <li>
+                                    <a href="data_administrative.html">行政類</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">行政類</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            資料集
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                        <th>資料編號</th>
+                                        <th>相關單位</th>
+                                        <th>細部單位</th>
+                                        <th>資料名稱</th>
+                                        <th>資料說明</th>
+                                        <th>主要URL</th>
+                                        <th>JSONUrl</th>
+                                        <th>XMLUrl</th>
+                                        <th>CSVUrl</th>
+                                    </tr>
+                                </thead>
+                                <tbody>                                   
+                                   <tr>
+                                        <td>DA001</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署政府出版品書目</td>
+                                        <td>不定期提供本署出版品成果報告書書目訊息，包括題名、作者、出版項、出版日期、分類號、統一編號、中文摘要等訊息</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencypublication" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=2DD4938B-123C-4988-99FD-9E85D2A94E05" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=2DD4938B-123C-4988-99FD-9E85D2A94E05" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=2DD4938B-123C-4988-99FD-9E85D2A94E05" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA002</td>
+                                        <td>經濟部水利署</td>
+                                        <td>綜合企劃組</td>
+                                        <td>水利署委辦計畫基本資料</td>
+                                        <td>提供水利署委辦計畫基本資料供參考</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencycommissionedprojectprofile" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=7A19CEC4-7CE7-45C5-B65A-4FF934C6D12B" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=7A19CEC4-7CE7-45C5-B65A-4FF934C6D12B" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=7A19CEC4-7CE7-45C5-B65A-4FF934C6D12B" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA003</td>
+                                        <td>經濟部水利署</td>
+                                        <td>綜合企劃組</td>
+                                        <td>水利署研究計畫報告書基本資料</td>
+                                        <td>本資料集提供計畫成果歸檔後資料，研究計畫包含科專計畫、一般研究、調查研究、研究發展類計畫等四類。主要提供水利署辦理之委託服務計畫基本資料，包括計畫年度、計畫編號、中、英文計畫名稱、計畫主類別、計畫次類別、主辦人員機關、單位、契約開始日期、契約結束日期、契約經費資本門、契約經費經常門、中文計畫摘要、英文計畫摘要、年度項目、受委託機構、主持人姓名、中文關鍵字、英文關鍵字、計畫研究成果、應用情形及效益等。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyresearchprojectreportprofile" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=797A7D92-34C6-4359-81A0-B580A2E2F8CD" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=797A7D92-34C6-4359-81A0-B580A2E2F8CD" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=797A7D92-34C6-4359-81A0-B580A2E2F8CD" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA004</td>
+                                        <td>經濟部水利署</td>
+                                        <td>主計室</td>
+                                        <td>水利署及所屬法定預算</td>
+                                        <td>本資料集包括：「歲入來源別預算表、歲出機關別預算表、歲入項目說明提要表、歲出計畫提要及分支計畫概況表、各項費用彙計表、歲出用途別科目分析表、資本支出分析表、人事費用分析表、預算員額明細表、公務車輛明細表、辦公房舍明細表、補助經費分析表、捐助經費分析表、派員出國計畫預算總表、派員出國計畫類別表-開會、派員赴大陸計畫預算表、歲出按職能及經濟性綜合分類表、跨年期計畫概況表、委辦經費分析表」。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/wralegalbudget" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=025AD7D5-09BF-4F5B-B3CE-EBBC290D18CF" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=025AD7D5-09BF-4F5B-B3CE-EBBC290D18CF" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=025AD7D5-09BF-4F5B-B3CE-EBBC290D18CF" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA005</td>
+                                        <td>經濟部水利署</td>
+                                        <td>主計室</td>
+                                        <td>水利署及所屬預算案</td>
+                                        <td>本資料集包括：「歲入來源別預算表、歲出機關別預算表、歲入項目說明提要表、歲出計畫提要及分支計畫概況表、各項費用彙計表、歲出用途別科目分析表、資本支出分析表、人事費用分析表、預算員額明細表、公務車輛明細表、辦公房舍明細表、補助經費分析表、捐助經費分析表、派員出國計畫預算總表、派員出國計畫類別表-開會、派員赴大陸計畫預算表、歲出按職能及經濟性綜合分類表、跨年期計畫概況表、委辦經費分析表」。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/wrabudgetproposal" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=B3EA4282-3E41-4CFB-AD09-604FDD64B1F8" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=B3EA4282-3E41-4CFB-AD09-604FDD64B1F8" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=B3EA4282-3E41-4CFB-AD09-604FDD64B1F8" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA006</td>
+                                        <td>經濟部水利署</td>
+                                        <td>主計室</td>
+                                        <td>水資源作業基金預算案</td>
+                                        <td>本資料集包括：「收支預計表及說明、現金流量預計表及補充說明、預計平衡表、餘絀撥補預計表」。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesoperationfund" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=0FD31F5E-4CEE-45E9-AE08-DF44CFBFFC7C" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=0FD31F5E-4CEE-45E9-AE08-DF44CFBFFC7C" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=0FD31F5E-4CEE-45E9-AE08-DF44CFBFFC7C" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA007</td>
+                                        <td>經濟部水利署</td>
+                                        <td>主計室</td>
+                                        <td>水資源作業基金附屬單位決算</td>
+                                        <td>本資料集包括：「收支決算及說明、現金流量決算、平衡表明細、餘絀撥補明細」。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesoperationfundsubordinateagencyfinancialstatement" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=D4333914-C119-420E-B3E7-97CE90E12696" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=D4333914-C119-420E-B3E7-97CE90E12696" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=D4333914-C119-420E-B3E7-97CE90E12696" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA008</td>
+                                        <td>經濟部水利署</td>
+                                        <td>主計室</td>
+                                        <td>水資源作業基金法定預算</td>
+                                        <td>本資料集包括：「收支預計表及說明、現金流量預計表及補充說明、預計平衡表、餘絀撥補預計表」。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesoperationfundsubordinateagencybudget" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=9CBF3B70-779D-422F-959B-680EDE23AE19" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=9CBF3B70-779D-422F-959B-680EDE23AE19" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=9CBF3B70-779D-422F-959B-680EDE23AE19" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA009</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署組織職掌及聯絡方式</td>
+                                        <td>提供水利署組織與職掌、地址、電話、傳真、網址及電子郵件信箱連結</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyorganizationdutyandconnection" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=F3110928-109B-4E87-8C10-1774CE37DE00" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=F3110928-109B-4E87-8C10-1774CE37DE00" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=F3110928-109B-4E87-8C10-1774CE37DE00" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA010</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署國賠統計</td>
+                                        <td>辦理國家賠償事件收結情形表</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencygovernmentcompensationstatistical" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=96FF922F-027D-4A54-BEAC-F24AE429A42A" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=96FF922F-027D-4A54-BEAC-F24AE429A42A" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=96FF922F-027D-4A54-BEAC-F24AE429A42A" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA011</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署公務統計報表</td>
+                                        <td>提供公務統計報表</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyregisterstatisticalreport" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=1C5480B8-786C-4DC2-A3CC-39367BBF1BE1" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=1C5480B8-786C-4DC2-A3CC-39367BBF1BE1" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=1C5480B8-786C-4DC2-A3CC-39367BBF1BE1" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA012</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署公務統計方案</td>
+                                        <td>提供公務統計方案</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencypublicservicestatisticscheme" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=F335A79F-B333-413F-8D41-29096E804D3A" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=F335A79F-B333-413F-8D41-29096E804D3A" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=F335A79F-B333-413F-8D41-29096E804D3A" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA013</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署統計書刊</td>
+                                        <td>提供水利統計書刊</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencystatisticbooksandperiodicals" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=4F6D0B9F-5C88-48BE-863C-DFEA14F718AD" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=4F6D0B9F-5C88-48BE-863C-DFEA14F718AD" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=4F6D0B9F-5C88-48BE-863C-DFEA14F718AD" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA014</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署統計分析</td>
+                                        <td>提供各縣市水利統計分析</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencystatisticanalysis" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=F1D88E63-64D5-441D-A4F3-1B491BC5F29E" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=F1D88E63-64D5-441D-A4F3-1B491BC5F29E" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=F1D88E63-64D5-441D-A4F3-1B491BC5F29E" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA015</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署水利統計簡訊</td>
+                                        <td>提供各期水利統計簡訊</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyhydraulicstatisticmessage" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=5CA80817-0864-4547-B47C-CD91005F4D29" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=5CA80817-0864-4547-B47C-CD91005F4D29" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=5CA80817-0864-4547-B47C-CD91005F4D29" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA016</td>
+                                        <td>經濟部水利署</td>
+                                        <td>主計室</td>
+                                        <td>水資源作業基金附屬單位會計報表</td>
+                                        <td>本資料集包括：「收支餘絀明細、購建固定資產計畫執行情形、平衡表明細」。主要描述水資源作業基金辦理水庫、海堤、河川及排水設施之管理、清淤疏濬、災害搶修搶險、相關人才培訓、回饋措施及溫泉業務等預算執行情形。本資料集的製作方式係由經濟部水利署所屬三區水資源局及經濟部水利署將預算執行資料報送後彙整，由經濟部水利署於期限前完成彙編。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesoperationfundaccountingstatement" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=F33CD40E-54C8-4058-A36A-36BEF3E2842D" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=F33CD40E-54C8-4058-A36A-36BEF3E2842D" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=F33CD40E-54C8-4058-A36A-36BEF3E2842D" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA017</td>
+                                        <td>經濟部水利署</td>
+                                        <td>主計室</td>
+                                        <td>水利署及所屬單位會計報告</td>
+                                        <td>本資料集包括：「經費類平衡表、經費類現金出納表、經費累計表、以前年度歲出保留數餘額表、歲入類平衡表、歲入類現金出納表、歲入累計表、以前年度歲入保留數餘額表」。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyunitaccountingreport" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=47C47252-72F0-44CA-A6D2-6B54862F17C7" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=47C47252-72F0-44CA-A6D2-6B54862F17C7" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=47C47252-72F0-44CA-A6D2-6B54862F17C7" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA018</td>
+                                        <td>經濟部水利署</td>
+                                        <td>主計室</td>
+                                        <td>水利署及所屬單位決算</td>
+                                        <td>本資料集包括：「歲入來源別決算表、歲出政事別決算表、歲出機關別決算表、以前年度歲入來源別轉入數決算表、以前年度歲出政事別轉入數決算表、以前年度歲出機關別轉入數決算表、歲入類平衡表(決算)、經費類平衡表(決算)」。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyunitfinalreport" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=2AB296B1-D824-42F6-952F-45D56FA230D0" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=2AB296B1-D824-42F6-952F-45D56FA230D0" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=2AB296B1-D824-42F6-952F-45D56FA230D0" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA019</td>
+                                        <td>經濟部水利署</td>
+                                        <td>綜合企劃組</td>
+                                        <td>水利節表揚大會影像集</td>
+                                        <td>為表彰對水利業務有特殊、重大或傑出貢獻之人員，增進社會大眾對水利節慶的重視，廣為宣導愛護水資源觀念，鼓勵水利從業人員及全民參與水資源環境之永續發展，充分運用民間資源促進水利業務之推動，水利署每年於6月6日水利節期間，辦理水利節表揚大會等慶祝活動。本年度水利署愛水節水活動計畫以「善水‧惜水」為主軸，強調面對氣候變遷、自然環境改變及水資源匱乏的新挑戰，我們學習謙虛地面對大自然，由傑出、專業、奉獻的水利人帶領臺灣水利事業成為經濟發展的動力，安居樂業的基礎，並以水利技術新思維，永續臺灣水資源。每年水利節期間，辦理「全國水利傑出貢獻獎」表揚大會，以激勵水利從業人員之工作士氣，並頒發「終身成就獎」。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/hydraulicengineeringfestivalawardceremonyvideoset" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=5622275C-5FAF-4D03-B868-307C217B8B4B" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=5622275C-5FAF-4D03-B868-307C217B8B4B" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=5622275C-5FAF-4D03-B868-307C217B8B4B" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA020</td>
+                                        <td>經濟部水利署</td>
+                                        <td>綜合企劃組</td>
+                                        <td>水資源投資分析資料</td>
+                                        <td>本資料集主要提供臺灣地區歷年水資源投資概況，包含水資源投資金額調查及國內資本形成，生產毛額等經濟性數據蒐集成果。本資料集係由水利署水資源投資分析資料管理系統所提供，其調查彙整歷年中央各目的事業主管機關、縣市政府、農田水利會與國營事業單位等之水資源投資金額，為水資源投資分析資料統一之管理及查詢網站。本資料集內容關鍵在於掌握水資源投資金額與國內經濟概況，讓使用者能進一步瞭解我國水資源事業投資額度。期盼作為相關單位進行水資源經營管理，政策制定及未來投資規劃時之參考資料。調查頻度每年一次，調查時間配合政府單位預決算作業時程辦理。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourceinvestmentanalysisinformation" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=F3331049-810F-44AF-BAB8-14461CC4DAD7" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=F3331049-810F-44AF-BAB8-14461CC4DAD7" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=F3331049-810F-44AF-BAB8-14461CC4DAD7" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA021</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署_決算書</td>
+                                        <td>提供年度決算</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyfinalreport" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=E2CB5F63-8002-49AD-84F6-1385E7F94346" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=E2CB5F63-8002-49AD-84F6-1385E7F94346" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=E2CB5F63-8002-49AD-84F6-1385E7F94346" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA022</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署_統計動態</td>
+                                        <td>提供水利統計動態</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencydynamicstatistics" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=2996228C-2E47-4344-8C65-BA030F2A433F" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=2996228C-2E47-4344-8C65-BA030F2A433F" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=2996228C-2E47-4344-8C65-BA030F2A433F" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA023</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署_招標及決標訊息</td>
+                                        <td>提供書面公共工程及採購契約資訊</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencytheannouncementfortenderandawardofpublicbidding" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=EF5969BA-A8A2-4689-9A9C-16F517907167" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=EF5969BA-A8A2-4689-9A9C-16F517907167" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=EF5969BA-A8A2-4689-9A9C-16F517907167" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA024</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署電子報</td>
+                                        <td>本資料集透過每週發行之電子報，提供水利署焦點、專欄、活動、人事、統計、公告、成效、防災、宣導、樂活等水利相關事項。作為收集資料之入口，各項資料成為知識物件，流向河川知識服務網分類、儲存，建立核心知識庫，並利用該平台已建立之功能，整合e河川各項主題網站及水利規劃所臺灣河川復育網之資料，蒐集及探索河川知識元件，建立水利知識家資料庫、發展水利知識檢索工具、主題網站及主題專區。每期電子報內容含括全面性、高交流互動性的水資源知識，透過知識內容傳遞，落實電子化整合、交流互動、環境生態、河川教育、親水享受。配合每周之電子報發行。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyelectronicnewspaper" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=F70495EB-5A8A-429B-9B69-2EE13AC90675" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=F70495EB-5A8A-429B-9B69-2EE13AC90675" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=F70495EB-5A8A-429B-9B69-2EE13AC90675" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA025</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署_預算書</td>
+                                        <td>提供年度預算</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencybudgetreport" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=0DA0972F-90A7-4F7D-A72D-12D05DC8C506" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=0DA0972F-90A7-4F7D-A72D-12D05DC8C506" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=0DA0972F-90A7-4F7D-A72D-12D05DC8C506" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA026</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署_支付或接受之補助</td>
+                                        <td>提供補助地方政府案件及捐助民間團體及個人案件</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencysubsidycases" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=EF9F382D-B147-4FF7-8768-47456B4060DE" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=EF9F382D-B147-4FF7-8768-47456B4060DE" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=EF9F382D-B147-4FF7-8768-47456B4060DE" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA027</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署_相關行政救濟案例</td>
+                                        <td>本資料內容除包括總目錄，提供案例彙編目錄及案例摘要與依據之法條外，主要係就水利法規（包括水利法、水權登記審查作業要點、溫泉法及溫泉開發許可辦法等）常見案例予以介紹，於每一則案例中，其內容除個案事實簡介外，尚包括訴願及行政救濟之理由，並附有訴願決定書、法院判決等文書連結以供查詢，期能藉此使同仁與民眾對水利法規或相關案例能獲得相當之理解及認識。 
+ 
+ 本資料業已公布於水利署全球資訊網，開放資料係公布連結清冊。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyadministrativeremedycases" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=5F62025C-B0FA-4229-AF5E-2EA34BAD08DE" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=5F62025C-B0FA-4229-AF5E-2EA34BAD08DE" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=5F62025C-B0FA-4229-AF5E-2EA34BAD08DE" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA028</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署_行政指導文書</td>
+                                        <td>本資料內容包括防災避災工具、經濟部水利署轄管綠美化水岸土地維護管理要點、河川區域種植申請、水源保育與回饋業務、核發土地使用未違反水利法證明文件、地下水水權臨時用水登記申請手冊、地面水水權登記申請手冊、水庫蓄水範圍內施設建造物申請規定、節水小撇步及建築物雨水貯留利用之水質建議值等，期能藉此資訊的公布使民眾對相關要點與規定能獲得相當之理解及認識。 
+ 
+ 本資料業已公布於水利署全球資訊網，開放資料係公布連結清冊。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyadministrativeguidancedocuments" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=59A949A1-CE6E-4695-AE49-F82052377E12" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=59A949A1-CE6E-4695-AE49-F82052377E12" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=59A949A1-CE6E-4695-AE49-F82052377E12" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA029</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署_施政計畫</td>
+                                        <td>本資料內容係提供水利署施政計畫，包含重要河川環境營造計畫、海岸環境營造計畫及區域排水整治及環境營造計畫，說明約略含括計畫緣起（依據、未來環境預測、問題評析）、計畫目標（目標說明、達成目標之限制、預期績效指標及評估基準）、現行相關政策及方案之檢討（現行政策、改進策略建議）、執行策略方法（執行策略、主要工作、分年執行策略、執行步驟與分工）、期程與資源需求（計畫期程、所需資源說明、經費來源及計算基準、經費需求）及預期效果及影響（效益評估、效益綜合評估、預期成果、風險管理）等內容。
+ 
+ 本資料業已公布於水利署全球資訊網，開放資料係公布連結清冊。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyadministrativeplan" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=F047E251-9C37-4A3D-B82F-05180F7B83A3" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=F047E251-9C37-4A3D-B82F-05180F7B83A3" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=F047E251-9C37-4A3D-B82F-05180F7B83A3" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA030</td>
+                                        <td>經濟部水利署</td>
+                                        <td>綜合企劃組</td>
+                                        <td>水利署列管計畫基本資料</td>
+                                        <td>為落實執行行政院列管計畫、行政院公共工程委員會一億元以上公共建設計畫、經濟部年度重要施政計畫及提升水利署計畫執行管考工作績效，故水利署建置相關系統，一方面，提供署內計畫控管人員定期填報列管計畫進度；另一方面，提供各業務單位透過系統定期回報發包工程、委託規劃執行進度及辦理情形。本資料集主要提供水利署受列管的計畫，其內容為每個月更新一次的列管計畫基本資料內容，包括：「列管計畫編號、列管計畫名稱、列管計畫群組、列管計畫分類、列管級別、列管計畫有效起始日、列管計畫有效終止日、中長程列管計畫起始日、中長程列管計畫終止日、主辦單位、執行單位、計畫專案經理人員、主(協)辦單位計畫主(協)辦人員、主辦單位督導人員、列管計畫預算型式、計畫總經費、計畫緣由、計畫目標、預期效益」等。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencycontrolledprojectinformation" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=116952A7-583B-417F-8B3F-C446ADE4D1C6" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=116952A7-583B-417F-8B3F-C446ADE4D1C6" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=116952A7-583B-417F-8B3F-C446ADE4D1C6" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA031</td>
+                                        <td>經濟部水利署</td>
+                                        <td>保育事業組</td>
+                                        <td>自來水管承裝商聘僱中人員統計資料</td>
+                                        <td>「自來水管承裝商」係指承攬裝修自來水導水、送水、配水管線及自來水用戶用水設備工程業務之公司或商號，須向所在地之主管機關進行「營業許可」申請後始得營業，分為甲、乙、丙三等，應具備資格、承辦工程範圍、及需聘僱人數均有差別。「自來水管承裝技工」指自來水管承裝商僱用裝修自來水導水、送水、配水管線及自來水用戶用水設備之技工。自來水管承裝技工考驗辦法依自來水法第九十三條第二項規定訂定，由中央主管機關或其委託之機關(構)辦理，因考驗範圍比照行政院勞工委員會訂定之「自來水管配管技術士丙級技能檢定」規範，由勞委員辦理之考試，合格後可取得自來水管配管丙級技術士證與自來水管承裝技工考驗合格證書(一試兩證)。民國94年前由中部辦公室、台北市、高雄市政府個別辦理證書之考驗與核發，民國94年1月以後由經濟部水利署統一辦理。資料集欄位包含：「紀錄序號、年度、性別、年齡區間、縣市名稱、聘僱類別(技工或技術員)、聘僱人數」，年齡區間為代碼1~7，分別代表：「1 代表20歲以下、2 代表21~30歲、3 代表31~40歲、4 代表41~50歲、5 代表51~60歲、6 代表61~70歲、7 代表71歲以上」。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/hiringemployeestatisticsinformationoftapwaterpipeinstallationfactory" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=69B43034-6A0C-4731-A485-B67C2332B173" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=69B43034-6A0C-4731-A485-B67C2332B173" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=69B43034-6A0C-4731-A485-B67C2332B173" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA032</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利知識文章</td>
+                                        <td>本資料集包含蒐集相關河川生態廊道、河川生態工程、生態旅遊、河川棲地等水利生態領域之相關學術研討會、產官學會、論壇、講座等的活動訊息或文章。本資料集係由水利署資訊室水利知識服務網資料庫管理系統所提供。主要以「預知民眾需求」、「環境教育」、「學術研究」為導向配合水利署河川水利生態主軸，進行相關訊息、文章資料蒐集、匯總與露出。每年不定期收錄活動訊息。期能透過結合雲端服務基礎架構，簡化資訊取得的方便性、時效性，從民眾角度主動提供在地化資訊服務，提升政府服務品質，滿足民眾需求，建立多樣性民眾有感服務，落實環境資源資訊通透與共用共享理念。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/hydraulicengineeringknowledgarticle" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=6F62C9B6-6A0C-47AC-AAD2-E271F9CEC229" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=6F62C9B6-6A0C-47AC-AAD2-E271F9CEC229" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=6F62C9B6-6A0C-47AC-AAD2-E271F9CEC229" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA033</td>
+                                        <td>經濟部水利署</td>
+                                        <td>工程事務組</td>
+                                        <td>水利工程契約範本</td>
+                                        <td>本資料集主要包含契約文件及效力、履約標的及地點、契約價金之給付、契約價金之調整、契約價金之給付條件、稅捐、履約期限、材料機具及設備、施工管理、監造作業、工程品管、災害處理、保險、保證金、驗收、操作維護資料及訓練、保固、遲延履約、權利及責任、契約變更及轉讓、契約終止解除及暫停執行、爭議處理及其他等。本資料集係依據行政院公共工程委員會所提供工程契約範本，並彙整收集所屬機關執行水利工程實務面所遭遇困難作適當修正。希冀作為本署暨所屬機關執行水利工程契約之參考範例。本水利工程契約範本如未載明之事項，仍依政府採購法及民法等相關法令規定辦理。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/hydraulicengineeringcontractsconventions" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=8764AE3B-720D-4386-A860-7DDBAA706C68" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=8764AE3B-720D-4386-A860-7DDBAA706C68" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=8764AE3B-720D-4386-A860-7DDBAA706C68" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA034</td>
+                                        <td>經濟部水利署</td>
+                                        <td>保育事業組</td>
+                                        <td>水源保育與回饋計畫執行成果經費統計（保護區）</td>
+                                        <td>為落實「受益者付費、受限者得償」的原則，民國93年6月30日總統公布之「自來水法部分條文修正案」規定，於自來水水質水量保護區內取用地面水或地下水者，應繳交水源保育與回饋費，並於95年1月1日起開徵。水源保育與回饋費專供水質水量保護區內使用，並依自來水法第12條之2第3項辦理水資源保育與環境生態保育基礎設施、居民公共福利回饋、受限土地補償及居民公益及水資源教育、研究與保育事項之用，本資料集係彙整歷年各自來水水質水量保護區水源保育與回饋費徵收金額以及相關執行單位(縣市政府、鄉鎮市區公所)經費分配及運用狀況。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourceconservationandcompensationfundstatistics(conservationarea)" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=FD0470B0-A85A-4DE8-B2D3-481C1C2997D6" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=FD0470B0-A85A-4DE8-B2D3-481C1C2997D6" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=FD0470B0-A85A-4DE8-B2D3-481C1C2997D6" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DA035</td>
+                                        <td>臺北水源特定區管理局</td>
+                                        <td>建管課</td>
+                                        <td>水利署臺北水源特定區管理局所發建築執照執照發照歷年統計</td>
+                                        <td>臺北水源特定區管理局建管課主要業務為處理特定區發布後主要計畫與細部計畫之執行，無妨礙都市計畫與土地使用分區證明之核發，特定區計畫樁位測定埋設與維護管理，拆除執照、建造執照、雜項執照及使用執照之核發，建築物之施工及使用管理，建築線指定、畸零地合併使用與法定空地證明之核發，違章建築之查報、認定及處理。關於建管之災害應變、搶救擬定與陳報，以及其他臨時交辦事項。祈以維護臺北水源特定區之水源、水質、水量之安全與潔淨。 本資料集為建照執照發照歷年統計，每年統計一次。提供民眾了解年份、行政區域、建照執照發照數量等資料。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencytaipeiwatermanagementofficereleasedconstructionpermitstatistics" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=5EFC1406-FB54-4A53-9611-20D023012598" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=5EFC1406-FB54-4A53-9611-20D023012598" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=5EFC1406-FB54-4A53-9611-20D023012598" target="_blank">點我</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+            responsive: true,
+            bAutoWidth: false, 
+              aoColumns : [
+                { sWidth: '5%' },
+                { sWidth: '5%' },
+                { sWidth: '5%' },
+                { sWidth: '10%' },
+                { sWidth: '55%' },
+                { sWidth: '5%' },
+                { sWidth: '5%' },
+                { sWidth: '5%' },
+                { sWidth: '5%' }
+              ]
+        });
+
+        // $('#dataTables-example').dataTable( {
+        //   "columns": [
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" }
+        //   ]
+        // } );
+    });
+    </script>
+
+</body>
+
+</html>

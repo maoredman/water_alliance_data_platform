@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>資料 - 水利地理資訊</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">水聯盟 - 資料平台</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> 首頁</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> 資料清單<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="data_prevent_disaster.html">水利防救災</a>
+                                </li>
+                                <li>
+                                    <a href="data_resource_use.html">水資源利用</a>
+                                </li>
+                                <li>
+                                    <a href="data_environment_sensitive.html">水環境敏感</a>
+                                </li>
+                                <li>
+                                    <a href="data_geo_info.html">水利地理資訊</a>
+                                </li>
+                                <li>
+                                    <a href="data_administrative.html">行政類</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">水利地理資訊</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            資料集
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                        <th>資料編號</th>
+                                        <th>相關單位</th>
+                                        <th>細部單位</th>
+                                        <th>資料名稱</th>
+                                        <th>資料說明</th>
+                                        <th>主要URL</th>
+                                        <th>JSONUrl</th>
+                                        <th>XMLUrl</th>
+                                        <th>CSVUrl</th>
+                                    </tr>
+                                </thead>
+                                <tbody>                                   
+                                   <tr>
+                                        <td>DN001</td>
+                                        <td>經濟部水利署</td>
+                                        <td>水文技術組</td>
+                                        <td>河川代碼</td>
+                                        <td>台灣地區河川(含部分排水)代碼
+ 
+ 
+ 
+ 備註：部分欄有空值係因代碼表有主流及支流上下層從屬關係，故需保留。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/rivercode" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=336F84F7-7CFF-4084-9698-813DD1A916FE" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=336F84F7-7CFF-4084-9698-813DD1A916FE" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=336F84F7-7CFF-4084-9698-813DD1A916FE" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN002</td>
+                                        <td>經濟部水利署</td>
+                                        <td>水利防災中心</td>
+                                        <td>淹水潛勢圖</td>
+                                        <td>淹水潛勢圖是經設計降雨情境、特定水文地文條件及水理模式演算，模擬防洪設施於正常運作下可能的淹水情形。淹水潛勢圖之內容包含透過降雨組體圖說明設計降雨情境、依據不同淹水深度級距以不同顏色標示該淹水深度之範圍、使用限制說明。淹水潛勢圖係為預先掌握災害風險而產製，目前淹水潛勢圖無法模擬未來颱洪事件的降水歷程與淹水狀況，故產製時係依據水文分析之結果，設定不同之降雨量及降雨歷程，其僅供災前防汛整備應變。淹水潛勢圖產製過程中需考量與假設的變因眾多，而時空解析度與複雜度對於產出成果有重大影響，故結果具不確定性。依據水災潛勢資料公開辦法規定，淹水潛勢圖僅供防災相關業務使用，不得援引作為土地使用管制或土地開發限制的判定依據。依據災害防救法規定，災害潛勢圖資應5年更新一次，故有效期限視為5年。淹水潛勢圖資之空間限制係依據每一次淹水潛勢更新工作之模式建構範圍，模式範圍內之區域即為淹水潛勢圖註釋之區域。淹水潛勢圖可供地方政府作為災害防救計畫研擬的參考依據，並進一步加值為鄉鎮層級防災地圖，以提供離災與減災的重要資訊。此外，亦提供相關防救災資訊系統與應用服務平台，進行防災業務相關的介接與應用。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/inundationprobabilitymaps" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=69F215C7-96E6-496D-B73F-DD6BB540BB41" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=69F215C7-96E6-496D-B73F-DD6BB540BB41" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=69F215C7-96E6-496D-B73F-DD6BB540BB41" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN003</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>近海水文潮位站位置圖</td>
+                                        <td>1. 本資料集主要描述水利署暨所屬機關管轄近海水文氣象站位置圖資料，用以提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用，欄位顯示為測站名稱，地理空間資料表現形式為點，資料筆數總計12筆。
+ 
+ 2. 近海水文潮位站主要觀測項目為潮位高程，目前已全部採用自動化觀測設備進行觀測，正常觀測為每小時潮位變化。
+ 
+ 3. 本資料僅納入測站基本資料，不包括實際觀測成果。
+ 
+ 4. 使用Google Earth軟體開啟本檔案，因Google提供之底圖影像並無經過精密之正射校正，圖層套疊時會產生些許誤差。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/coastaloceantidestationlocation" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=85C0C55C-C29B-4E61-BA96-12F94BD0D3FD" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=85C0C55C-C29B-4E61-BA96-12F94BD0D3FD" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=85C0C55C-C29B-4E61-BA96-12F94BD0D3FD" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN004</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>近海水文氣象站位置圖</td>
+                                        <td>1. 本資料集主要描述水利署暨所屬機關管轄近海水文氣象站位置圖資料，用以提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用，欄位顯示為測站名稱，地理空間資料表現形式為點，資料筆數總計12筆。
+ 
+ 2. 近海水文氣象站主要觀測項目為氣壓、氣溫、風（風速、風向）、日照（部分測站）與相對濕度（部分測站）資料，目前已全部採用自動化觀測設備進行觀測，正常觀測為每小時氣象變化。
+ 
+ 3. 本資料僅納入測站基本資料，不包括實際觀測成果。
+ 
+ 4. 使用Google Earth軟體開啟本檔案，因Google提供之底圖影像並無經過精密之正射校正，圖層套疊時會產生些許誤差。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/coastaloceanweatherstationlocation" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=F8F08F4F-2F44-4CF7-9457-C50590775B4C" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=F8F08F4F-2F44-4CF7-9457-C50590775B4C" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=F8F08F4F-2F44-4CF7-9457-C50590775B4C" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN005</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>河川支流</td>
+                                        <td>1. 本資料集主要描述臺灣地區各依中央主管機關認定其屬於水資源開發或國土保育或區域發展關係重大之水系，並經公告之水道。內容包含流域名稱、河川名稱等項目。河川依其管理權責，分為中央管河川、直轄市管河川及縣（市）管河川三類。
+ 
+ 2. 河川（支流）的資料，用以提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用，欄位顯示為河川中文名稱，地理空間資料表現形式為線，資料筆數總計2,015筆。
+ 
+ 3. 支流在水文學上指匯入另一條河流（或其他水體）而不直接入海的河流。支流所匯入的河流稱為幹流或主流，兩河或多河交匯之處稱為合流或合流處。與支流相反的情況稱為分流。沿河水的流動方向，可稱為左側支流和右側支流。
+ 
+ 4. 使用Google Earth軟體開啟本檔案，因Google提供之底圖影像並無經過精密之正射校正，圖層套疊時會產生些許誤差。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/riversubsidiarybasin" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=19E0CDE7-87C7-47DE-8C43-D4CBF06087D9" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=19E0CDE7-87C7-47DE-8C43-D4CBF06087D9" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=19E0CDE7-87C7-47DE-8C43-D4CBF06087D9" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN006</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>河川河道</td>
+                                        <td>1. 本資料集主要描述臺灣地區各依中央主管機關認定其屬於水資源開發或國土保育或區域發展關係重大之水系，並經公告之水道。內容包含流域名稱、河川名稱等項目。河川依其管理權責，分為中央管河川、直轄市管河川及縣（市）管河川三類。
+ 
+ 2. 河川（河道）資料，用以提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用，欄位顯示為河川中文名稱，地理空間資料表現形式為，資料筆數總計13,262筆。
+ 
+ 3. 河流有其河道，河道底部稱為河床。
+ 
+ 4. 使用Google Earth軟體開啟本檔案，因Google提供之底圖影像並無經過精密之正射校正，圖層套疊時會產生些許誤差。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/rivercoursebasin" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=8FA3C3CE-B1E5-4CAB-A86D-E8F6B47759A3" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=8FA3C3CE-B1E5-4CAB-A86D-E8F6B47759A3" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=8FA3C3CE-B1E5-4CAB-A86D-E8F6B47759A3" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN007</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>河川局管轄範圍圖</td>
+                                        <td>1. 本資料集主要描述水利署暨所屬機關管轄全臺河川流域範圍，水利署轄下共區分為10個河川局，共轄管臺灣25條中央管河川流域之河川水文、水理、水文氣象等資料。
+ 
+ 2. 河川局管轄範圍圖資料，用以提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用，欄位顯示為河川局中文名稱，地理空間資料表現形式為面，資料筆數總計10筆。
+ 
+ 3. 使用Google Earth軟體開啟本檔案，因Google提供之底圖影像並無經過精密之正射校正，圖層套疊時會產生些許誤差。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/rivermanagementofficejurisdiction" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=F821271B-5230-481E-B8A7-5C3C3D8B1567" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=F821271B-5230-481E-B8A7-5C3C3D8B1567" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=F821271B-5230-481E-B8A7-5C3C3D8B1567" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN008</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水利署及所屬單位位置圖</td>
+                                        <td>1. 本資料集主要描述水利署暨所屬機關之辦公廳設位置資訊，用以提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用，欄位顯示為水利署單位名稱，地理空間資料表現形式為點，資料筆數總計18筆。
+ 
+ 2. 使用Google Earth軟體開啟本檔案，因Google提供之底圖影像並無經過精密之正射校正，圖層套疊時會產生些許誤差。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyandsubunitlocation" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=86B6E7E8-1ECC-4638-ACA8-67CACB2140AC" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=86B6E7E8-1ECC-4638-ACA8-67CACB2140AC" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=86B6E7E8-1ECC-4638-ACA8-67CACB2140AC" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN009</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>海氣象資料浮標站位置圖</td>
+                                        <td>1. 本資料集主要描述水利署暨所屬機關管轄海氣象資料浮標站位置圖資料，用以提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用，欄位顯示為測站名稱，地理空間資料表現形式為點，資料筆數總計5筆。
+ 
+ 2. 資料浮標為一位於海面、無人操控之海氣象觀測站，其任務為蒐集海面海氣象要素，提供海岸及海洋工程所需之基本海氣象資料，其特點為：長期自動觀測多項海氣象資料、取得即時海氣象資訊、設站地點不受水深限制，能廣泛運用於各種海域。
+ 
+ 3. 本資料僅納入測站基本資料，不包括實際觀測成果。
+ 
+ 4. 使用Google Earth軟體開啟本檔案，因Google提供之底圖影像並無經過精密之正射校正，圖層套疊時會產生些許誤差。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/distributionofwaterresourcesagencyscoastaldatabuoys" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=98CB3423-748E-49F3-B8F1-E505B966323A" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=98CB3423-748E-49F3-B8F1-E505B966323A" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=98CB3423-748E-49F3-B8F1-E505B966323A" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN010</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水庫堰壩位置圖</td>
+                                        <td>1. 本資料集主要描述水利署暨所屬機關管轄水庫、堰、壩等設施位置資料，水庫、堰、壩為人為工程，多設於河川、湖泊、水庫等地區。用以提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用，欄位顯示為水庫堰壩名稱，地理空間資料表現形式為點，資料筆數總計117筆。
+ 
+ 2. 使用Google Earth軟體開啟本檔案，因Google提供之底圖影像並無經過精密之正射校正，圖層套疊時會產生些許誤差。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/reservoirdamlocation" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=923F16D6-070B-4A7D-9DA7-6CF010EEB090" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=923F16D6-070B-4A7D-9DA7-6CF010EEB090" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=923F16D6-070B-4A7D-9DA7-6CF010EEB090" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN011</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>自來水水質水量保護區圖</td>
+                                        <td>1. 本資料集主要描述自來水水質水量保護區圖資料，用以提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用，欄位顯示為自來水水質水量保護區中文名稱，地理空間資料表現形式為面，資料筆數總計113筆。
+ 
+ 2. 依自來水法第11條規定劃設，為確保水質與水量供應品質，範圍內限制或禁止開發或污染行為。 
+ 
+ 3. 使用Google Earth軟體開啟本檔案，因Google提供之底圖影像並無經過精密之正射校正，圖層套疊時會產生些許誤差。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterqualityandquantityprotectionarea" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=D7F1B914-9A3B-4B45-AD08-50AB673AA7BE" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=D7F1B914-9A3B-4B45-AD08-50AB673AA7BE" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=D7F1B914-9A3B-4B45-AD08-50AB673AA7BE" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN012</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水源特定區圖</td>
+                                        <td>1. 本資料集主要描述水源特定區圖資料，用以提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用，欄位顯示為區域範圍，地理空間資料表現形式為面，資料筆數總計1筆。
+ 
+ 2. 臺北水源特定區範圍，係國內第一個經由都市計畫法設立之水源水質水量保護區，負責管理新店溪青潭堰上游集水區之水源、水質、水量之安全與潔淨，以保護供應大臺北地區自來水之水源、水質不受破壞與污染，特定區範圍涵蓋新北市之新店、烏來、石碇、坪林、雙溪等五區，集水區面積廣達717平方公里。
+ 
+ 3. 使用Google Earth軟體開啟本檔案，因Google提供之底圖影像並無經過精密之正射校正，圖層套疊時會產生些許誤差。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/watersourcesdistrict" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=FA209FFB-DBAE-498A-9A7A-75C8262B5C5F" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=FA209FFB-DBAE-498A-9A7A-75C8262B5C5F" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=FA209FFB-DBAE-498A-9A7A-75C8262B5C5F" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN013</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水資源局轄區範圍圖</td>
+                                        <td>1. 本資料集主要描述水資源局轄區範圍圖資料，用以提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用，欄位顯示為區域範圍，地理空間資料表現形式為面，資料筆數總計3筆。
+ 
+ 2. 水利署共設有北、中、南區水資源局，主要管理臺灣與離島地區水資源、水質水量之保護等工作，並再下轄各水庫、堰、壩等管理機關。
+ 
+ 3. 使用Google Earth軟體開啟本檔案，因Google提供之底圖影像並無經過精密之正射校正，圖層套疊時會產生些許誤差。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesofficejurisdiction" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=EA41548C-E91F-45B5-9B5A-5D2584201B27" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=EA41548C-E91F-45B5-9B5A-5D2584201B27" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=EA41548C-E91F-45B5-9B5A-5D2584201B27" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN014</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>水資源分區圖</td>
+                                        <td>1. 本資料集主要描述水資源分區圖資料，用以提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用，欄位顯示為區域範圍，地理空間資料表現形式為面，資料筆數總計4筆。
+ 
+ 2. 臺灣本島地區水資源分區，區分為北、中、南、東4區，並以縣市為空間單元進行區分。
+ 
+ 3. 使用Google Earth軟體開啟本檔案，因Google提供之底圖影像並無經過精密之正射校正，圖層套疊時會產生些許誤差。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourceszoning" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=142D5AF6-EAE0-43B1-9140-3ADF4CD4E11E" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=142D5AF6-EAE0-43B1-9140-3ADF4CD4E11E" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=142D5AF6-EAE0-43B1-9140-3ADF4CD4E11E" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN015</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>地下水觀測井位置圖_現存</td>
+                                        <td>1.本資料集主要描述水利署暨所屬機關管轄地下水水質監測站位置圖，用以提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用，欄位顯示為現存站區域位置名稱，地理空間資料表現形式為點，
+ 
+ 2.資料筆數總計767筆。 
+ 
+ 3.水利署主管全臺地水水水位觀測井位置，地下水水位觀測井區分自記（每小時記錄一次）、普通井（每月人工記錄一次），觀測項目為地下水水位(m)。本資料僅納入測站基本資料，不包括實際觀測成果。
+ 
+ 4.使用Google Earth軟體開啟本檔案，因Google提供之底圖影像並無經過精密之正射校正，圖層套疊時會產生些許誤差。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/existedgroundwaterwelllocation" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=9B55CFCC-E9B4-460E-8A1B-445397DF3689" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=9B55CFCC-E9B4-460E-8A1B-445397DF3689" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=9B55CFCC-E9B4-460E-8A1B-445397DF3689" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN016</td>
+                                        <td>經濟部水利署</td>
+                                        <td>河川勘測隊</td>
+                                        <td>高屏溪水系隘寮溪支流武洛溪河川區域圖</td>
+                                        <td>由於社會發展迅速，沿岸土地利用及使用行為越來越多元，加以兩岸土地地籍重測、堤防護岸興建及自然環境變遷等因素，為使河川有效管理且顧及民眾權益及安全，需予劃定河川區域，釐訂管理範圍。依據水利法第78條之2與河川管理辦法第6及第7條規定，本署製作「高屏溪水系隘寮溪支流武洛溪河川區域圖」，其係經測量製作為數值河川圖籍後再轉換為KML檔案以供使用者下載套匯，並僅供參考，實際位置應以權責機關所公告之圖資為準，其所涉及之土地實際權力界址者，土地實際位置應以地政機關椱丈成果為準。河川區域常因堤防完成或土地重劃等等因素而辦理局部變更(更新)，故套用時宜請注意這些局部更新的部分，勿僅套疊先前較長的河段，而忽略其中某些小河段的局部更新。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/riverareamapofwuluoriver" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=5856323B-113D-40A9-8929-1C5F49814D69" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=5856323B-113D-40A9-8929-1C5F49814D69" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=5856323B-113D-40A9-8929-1C5F49814D69" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN017</td>
+                                        <td>經濟部水利署</td>
+                                        <td>河川勘測隊</td>
+                                        <td>高屏溪水系荖濃溪支流濁口溪河川區域圖</td>
+                                        <td>由於社會發展迅速，沿岸土地利用及使用行為越來越多元，加以兩岸土地地籍重測、堤防護岸興建及自然環境變遷等因素，為使河川有效管理且顧及民眾權益及安全，需予劃定河川區域，釐訂管理範圍。依據水利法第78條之2與河川管理辦法第6及第7條規定，本署製作「高屏溪水系荖濃溪支流濁口溪河川區域圖」，其係經測量製作為數值河川圖籍後再轉換為KML檔案以供使用者下載套匯，並僅供參考，實際位置應以權責機關所公告之圖資為準，其所涉及之土地實際權力界址者，土地實際位置應以地政機關椱丈成果為準。河川區域常因堤防完成或土地重劃等等因素而辦理局部變更(更新)，故套用時宜請注意這些局部更新的部分，勿僅套疊先前較長的河段，而忽略其中某些小河段的局部更新。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/riverareamapofzhuokouriver" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=15FDE401-9F8A-48FD-81E0-7A149AB48A80" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=15FDE401-9F8A-48FD-81E0-7A149AB48A80" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=15FDE401-9F8A-48FD-81E0-7A149AB48A80" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN018</td>
+                                        <td>經濟部水利署</td>
+                                        <td>河川勘測隊</td>
+                                        <td>高屏溪水系荖濃溪支流隘寮溪河川區域圖</td>
+                                        <td>由於社會發展迅速，沿岸土地利用及使用行為越來越多元，加以兩岸土地地籍重測、堤防護岸興建及自然環境變遷等因素，為使河川有效管理且顧及民眾權益及安全，需予劃定河川區域，釐訂管理範圍。依據水利法第78條之2與河川管理辦法第6及第7條規定，本署製作「高屏溪水系荖濃溪支流隘寮溪河川區域圖」，其係經測量製作為數值河川圖籍後再轉換為KML檔案以供使用者下載套匯，並僅供參考，實際位置應以權責機關所公告之圖資為準，其所涉及之土地實際權力界址者，土地實際位置應以地政機關椱丈成果為準。河川區域常因堤防完成或土地重劃等等因素而辦理局部變更(更新)，故套用時宜請注意這些局部更新的部分，勿僅套疊先前較長的河段，而忽略其中某些小河段的局部更新。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/riverareamapofailiaoriver" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=29A611AF-240B-496D-B12D-6C62D253203F" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=29A611AF-240B-496D-B12D-6C62D253203F" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=29A611AF-240B-496D-B12D-6C62D253203F" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN019</td>
+                                        <td>經濟部水利署</td>
+                                        <td>保育事業組</td>
+                                        <td>石門水庫(含榮華壩)集水區範圍圖</td>
+                                        <td>石門水庫（含榮華壩）集水區範圍位於桃園市境淡水河最大支流大漢溪上，行政區跨新北市、桃園市、宜蘭縣、新竹縣、苗栗縣等五個縣市。經濟部水利署北區水資源局於民國101年10月17日依據經濟部函頒「水庫集水區圖資製作與查認作業要點」第六條規定，提送石門水庫（含榮華壩）水庫集水區範圍。本水庫集水區範圍係以水庫大壩以上全流域稜線以內所涵蓋之區域為原則劃設而成，且同屬大漢溪上下游系列水庫，故上游水庫－榮華壩由下游水庫－石門水庫合併劃定水庫集水區。於104年5月13日經經濟部水利署查認後做為開放資料提供。由於水庫集水區範圍圖資尚未完成全臺95座查認作業，且後續劃設之圖資與原查認之圖資仍有相鄰共邊之疑慮，故本圖資僅供參考。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/catchmentareaofshimenreservoirandronghuadam" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=A810CEE8-5156-4E6A-B4B9-60F5DD58E769" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=A810CEE8-5156-4E6A-B4B9-60F5DD58E769" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=A810CEE8-5156-4E6A-B4B9-60F5DD58E769" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN020</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>河川流域範圍圖</td>
+                                        <td>水利署暨所屬機關提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用各河川流域的相關範圍資訊。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/riverbasinrange" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=27BE6E96-A669-43FF-A4DD-1D57701AB86B" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=27BE6E96-A669-43FF-A4DD-1D57701AB86B" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=27BE6E96-A669-43FF-A4DD-1D57701AB86B" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN021</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>含沙量測站位置圖</td>
+                                        <td>水利署暨所屬機關提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用各含沙量測站的相關點位資訊。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/sendcontentlocation" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=F759594A-E0AF-4095-A3DC-ED0BC5408E77" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=F759594A-E0AF-4095-A3DC-ED0BC5408E77" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=F759594A-E0AF-4095-A3DC-ED0BC5408E77" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN022</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>河川斷面樁位置圖</td>
+                                        <td>水利署暨所屬機關提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用各河川斷面樁的相關點位資訊。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/rivercrosspilelocation" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=56FFB5A4-E45E-4323-B544-A7FD6861C731" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=56FFB5A4-E45E-4323-B544-A7FD6861C731" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=56FFB5A4-E45E-4323-B544-A7FD6861C731" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN023</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>河川斷面線位置圖</td>
+                                        <td>水利署暨所屬機關提供各政府機關及受政府機關委託計畫之民間機構、團體或學術單位使用各河川斷面線位置的相關線段資訊。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/rivercrosslinelocation" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=388D00F5-E989-4683-953D-D1AE029E3727" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=388D00F5-E989-4683-953D-D1AE029E3727" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=388D00F5-E989-4683-953D-D1AE029E3727" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN024</td>
+                                        <td>經濟部水利署</td>
+                                        <td>水源經營組</td>
+                                        <td>水利署水庫警告設施設置圖</td>
+                                        <td>強化我國民眾從事水域遊憩活動之安全資訊，擴大公私部門水域事故防災地圖資料之整合，並參照政府資料開放平臺之資料開放（Open Data）精神，本資料收集石門、曾文等具觀光遊憩活動之水庫，水庫庫區警告標示牌、救生圈、救生站(含AED)等位址相關資料，提供民眾了解相關警告設施、救生圈及救生站位置，並作為管理機關盤點檢查、更新及評估增設依據，另可提供消防救援位置通報及事故防災。後續如有新設置之設施，不定期更新最新資料提供參考，使水域警告設施資訊圖資化，以利於民眾使用智慧型行動裝置查詢，從而獲取完整之資訊，提升水域活動安全。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencywarningfacilityinreservoir" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=C2B36762-3FA8-48F4-9A95-4E2BE8D93059" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=C2B36762-3FA8-48F4-9A95-4E2BE8D93059" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=C2B36762-3FA8-48F4-9A95-4E2BE8D93059" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN025</td>
+                                        <td>經濟部水利署</td>
+                                        <td>保育事業組</td>
+                                        <td>寶山第二水庫集水區範圍圖</td>
+                                        <td>寶山第二水庫集水區範圍位於新竹縣寶山鄉山湖村境內，攔蓄峨眉溪支流石井溪及由上坪堰越域引入頭前溪支流上坪溪等水源，供應家用及公共給水、農業用水、工業用水及水力用水等多目標使用，是一座離槽水庫。本水庫集水區範圍係以寶山第二水庫大壩以上全流域稜線以內所涵蓋之區域為原則劃設而成，集水區面積約2.83平方公里。經濟部水利署北區水資源局於101年12月依據「水庫集水區圖資製作與查認作業要點」規定，提送寶山第二水庫集水區範圍，並於104年5月13日經經濟部水利署查認後做為開放資料提供。由於水庫集水區範圍圖資尚未完成全臺95座查認作業，未來將視查認作業辦理情形，陸續開放水庫集水區圖資。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/catchmentareaofsecondbaoshanreservoir" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=A6DD1FF3-0221-489E-95A6-5C533D517270" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=A6DD1FF3-0221-489E-95A6-5C533D517270" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=A6DD1FF3-0221-489E-95A6-5C533D517270" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN026</td>
+                                        <td>經濟部水利署</td>
+                                        <td>保育事業組</td>
+                                        <td>鯉魚潭水庫集水區範圍圖</td>
+                                        <td>鯉魚潭水庫集水區範圍位於苗栗縣景山溪下游，攔蓄景山溪水源及由士林攔河堰水庫(以下簡稱士林攔河堰)引入大安溪水源，供應家用及公共給水、農業用水及工業用水等用水標的使用，是一座離槽水庫。本水庫集水區範圍係以鯉魚潭水庫大壩以上全流域稜線以內所涵蓋之區域為原則劃設而成，集水區面積約52.77平方公里。經濟部水利署中區水資源局於102年2月28日依據「水庫集水區圖資製作與查認作業要點」規定，提送鯉魚潭水庫集水區範圍，並於104年5月13日經經濟部水利署查認後做為開放資料提供。由於水庫集水區範圍圖資尚未完成全臺95座查認作業，未來將視查認作業辦理情形，陸續開放水庫集水區圖資。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/catchmentareaofliyutanreservoir" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=3A2267D3-9B5B-4A44-A1F8-9F561A9BF770" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=3A2267D3-9B5B-4A44-A1F8-9F561A9BF770" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=3A2267D3-9B5B-4A44-A1F8-9F561A9BF770" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN027</td>
+                                        <td>經濟部水利署</td>
+                                        <td>保育事業組</td>
+                                        <td>石岡壩集水區範圍圖</td>
+                                        <td>石岡壩水庫集水區範圍位於台中市石岡區大甲溪最下游，所攔引大甲溪水源，供作家用及公共給水、農業用水、工業用水等用水標的使用。本水庫集水區範圍係以石岡壩大壩以上全流域稜線以內所涵蓋之區域為原則劃設而成，集水區面積約186.45平方公里。經濟部水利署中區水資源局於102年2月28日依據「水庫集水區圖資製作與查認作業要點」規定，提送石岡壩水庫集水區範圍，並於104年11月23日經經濟部水利署查認後做為開放資料提供。由於水庫集水區範圍圖資尚未完成全臺95座查認作業，未來將視查認作業辦理情形，陸續開放水庫集水區圖資。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/catchmentareaofshigangdam" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=C22D4370-BD85-4F34-B2D6-E4A8BB1A8F66" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=C22D4370-BD85-4F34-B2D6-E4A8BB1A8F66" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=C22D4370-BD85-4F34-B2D6-E4A8BB1A8F66" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN028</td>
+                                        <td>經濟部水利署</td>
+                                        <td>保育事業組</td>
+                                        <td>阿公店水庫集水區範圍圖</td>
+                                        <td>阿公店水庫集水區範圍位於高雄市燕巢區小崗山東麓與岡山區、田寮區交界，攔蓄之阿公店溪水源和由旗山溪月眉攔河堰（以下簡稱月眉堰）越域引水引取水源，供應家用及公共給水、農業用水、工業用水等用水標的與防洪目標使用。本水庫集水區範圍係以阿公店水庫大壩以上全流域稜線以內所涵蓋之區域為原則劃設而成，集水區面積約30.07平方公里。經濟部水利署南區水資源局於101年12月依據「水庫集水區圖資製作與查認作業要點」規定，提送鯉魚潭水庫集水區範圍，並於104年7月15日經經濟部水利署查認後做為開放資料提供。由於水庫集水區範圍圖資尚未完成全臺95座查認作業，未來將視查認作業辦理情形，陸續開放水庫集水區圖資。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/catchmentareaofagongdianreservoir" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=C3F543BC-2C15-4393-A55B-F3B4EF29D397" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=C3F543BC-2C15-4393-A55B-F3B4EF29D397" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=C3F543BC-2C15-4393-A55B-F3B4EF29D397" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DN029</td>
+                                        <td>經濟部水利署</td>
+                                        <td>保育事業組</td>
+                                        <td>牡丹水庫集水區範圍圖</td>
+                                        <td>牡丹水庫集水區範圍位於屏東縣牡丹鄉四重溪上游，所攔蓄汝仍溪及牡丹溪水量，供應家用及公共給水、農業用水等用水標的使用。本水庫集水區範圍係以牡丹水庫大壩以上全流域稜線以內所涵蓋之區域為原則劃設而成，集水區面積約66.48平方公里。經濟部水利署南區水資源局於101年12月依據「水庫集水區圖資製作與查認作業要點」規定，提送鯉魚潭水庫集水區範圍，並於104年11月23日經經濟部水利署查認後做為開放資料提供。由於水庫集水區範圍圖資尚未完成全臺95座查認作業，未來將視查認作業辦理情形，陸續開放水庫集水區圖資。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/catchmentareaofmudanreservoir" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=26D953F9-6E86-4F63-A1C5-1691FE9E0C30" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=26D953F9-6E86-4F63-A1C5-1691FE9E0C30" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=26D953F9-6E86-4F63-A1C5-1691FE9E0C30" target="_blank">點我</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+            responsive: true,
+            bAutoWidth: false, 
+              aoColumns : [
+                { sWidth: '5%' },
+                { sWidth: '5%' },
+                { sWidth: '5%' },
+                { sWidth: '10%' },
+                { sWidth: '55%' },
+                { sWidth: '5%' },
+                { sWidth: '5%' },
+                { sWidth: '5%' },
+                { sWidth: '5%' }
+              ]
+        });
+
+        // $('#dataTables-example').dataTable( {
+        //   "columns": [
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" }
+        //   ]
+        // } );
+    });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>資料 - 水環境敏感</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+
+    <!-- DataTables CSS -->
+    <link href="../vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="../vendor/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">水聯盟 - 資料平台</a>
+            </div>
+            <!-- /.navbar-header -->
+
+            <div class="navbar-default sidebar" role="navigation">
+                <div class="sidebar-nav navbar-collapse">
+                    <ul class="nav" id="side-menu">
+                        <li>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> 首頁</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> 資料清單<span class="fa arrow"></span></a>
+                            <ul class="nav nav-second-level">
+                                <li>
+                                    <a href="data_prevent_disaster.html">水利防救災</a>
+                                </li>
+                                <li>
+                                    <a href="data_resource_use.html">水資源利用</a>
+                                </li>
+                                <li>
+                                    <a href="data_environment_sensitive.html">水環境敏感</a>
+                                </li>
+                                <li>
+                                    <a href="data_geo_info.html">水利地理資訊</a>
+                                </li>
+                                <li>
+                                    <a href="data_administrative.html">行政類</a>
+                                </li>
+                            </ul>
+                            <!-- /.nav-second-level -->
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.sidebar-collapse -->
+            </div>
+            <!-- /.navbar-static-side -->
+        </nav>
+
+        <div id="page-wrapper">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="page-header">水環境敏感</h1>
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            <!-- /.row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            資料集
+                        </div>
+                        <!-- /.panel-heading -->
+                        <div class="panel-body">
+                            <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
+                                <thead>
+                                    <tr>
+                                        <th>資料編號</th>
+                                        <th>相關單位</th>
+                                        <th>細部單位</th>
+                                        <th>資料名稱</th>
+                                        <th>資料說明</th>
+                                        <th>主要URL</th>
+                                        <th>JSONUrl</th>
+                                        <th>XMLUrl</th>
+                                        <th>CSVUrl</th>
+                                    </tr>
+                                </thead>
+                                <tbody>                                   
+                                   <tr>
+                                        <td>DE001</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>河川復育常見問答</td>
+                                        <td>本資料集包含蒐集相關河川生態廊道、河川生態工程、生態旅遊、防洪、環境改善、水利生態、河川棲地等水資源教室、河川復育、保育、河川日、水利常識、親水常問相關問答。本資料集係由水利署資訊室臺灣河川復育網資料庫管理系統所提供。主要以「預知民眾需求」、「環境教育」、「學術研究」為導向配合水利署河川復育主軸，和歷年來民眾常常詢問之問題，進行問題資料匯總與答案蒐集、增修、校對，並經水利署審核之後上稿。不定期收錄相關常見問題。期能從民眾角度主動提供在地化資訊服務，提升政府服務品質，更符合站在民眾角度服務理念，讓民眾更易瞭解河川生態事務。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/riverrestorationcommonquestionandanswer" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=FA43056B-1515-4867-8FD7-DD54EE02A892" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=FA43056B-1515-4867-8FD7-DD54EE02A892" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=FA43056B-1515-4867-8FD7-DD54EE02A892" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE002</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>河川復育英文版案例報導</td>
+                                        <td>本資料集主要係就河川復育蒐集國內、國外的河川復育案例，以英文版案例報導，除提供國內民眾河川復育知識宣導，亦可透過本網站與國際進行知識交流，提高臺灣的能見度；自2000年至今，包含水利及水土保持相關單位多融入生態工程之概念於施作工程中，以當地天然材料為建材，進行預鑄格框護岸及漿砌塊石護岸與固床工之施作，創造多樣化的水域型態，營造魚類棲地，期許達到水患防治及生態復育之成效。生態工程的相關作為自2004年後，由於許多採用生態工程治理之地區產生工程損壞或是成果不如預期目標之情事，常造成生態工程之效益未能被客觀評估，導致生態工程逐漸不再被廣泛提倡，而河川復育相關領域仍有待努力。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/riverrestorationcasereportinenglishedition" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=B879368E-9118-497A-B67F-0706B719B777" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=B879368E-9118-497A-B67F-0706B719B777" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=B879368E-9118-497A-B67F-0706B719B777" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE003</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>河川復育英文版新聞</td>
+                                        <td>本資料集主要係就河川復育蒐集英文版新聞，河川復育之理念與實踐源自歐洲。根據過去的研究，河川復育較嚴格的定義乃指「修復因人類活動所導致環境之損害，重建河川生態環境系統，在結構上與功能上回復至未受人類開發活動干擾前之自然狀態」。然而，由於人類開發活動干擾前的原始河川環境狀態目前並無歷史資料可遵循得知，修復河川系統至原始的自然情況在事實上難以達成；因此，在實際操作上一般只能回復河川溯及大幅度開發干擾前某一稍微理想的自然生態環境。由於所謂的稍微理想，在定義上較為主觀，因此，河川復育之定義與目標具有階段性與漸進性，本資料集係傳播河川復育觀念，促使民眾關心。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/riverrestorationnewsinenglishedition" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=DC44FEEF-CECE-40F6-BA12-38FEDC4AA755" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=DC44FEEF-CECE-40F6-BA12-38FEDC4AA755" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=DC44FEEF-CECE-40F6-BA12-38FEDC4AA755" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE004</td>
+                                        <td>經濟部水利署</td>
+                                        <td>保育事業組</td>
+                                        <td>自來水水質水量保護區專戶運用小組名單</td>
+                                        <td>為因應國內各地不斷要求因自來水法水質水量保護區劃設而受限之回饋聲浪，經濟部遵照行政院91年8月5日核定「限制發展地區救助、回饋、補償處理原則」，及落實「受益者付費、受限者得償」之精神，在收支平衡及不增加國家財政負擔原則下，推動自來水法部分條文修正法案，經於93年6月30日總統公布實施後，並於95年1月1日起開徵水源保育與回饋費。
+ 
+ 水質水量保護區專戶運用小組主要為管理運用所徵收之水源保育與回饋費，該經費將專供水質水量保護區內辦理水資源保育與環境生態保育基礎設施、居民公共福利回饋及受限土地補償之用。
+ 
+ 本資料集係統計96年度起各自來水水質水量保護區專戶運用小組歷屆成員及任期。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/tapwaterqualityandquantityprotectionareasaccountmanagementboardlist" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=06C7E4E2-F862-4BCF-9B0C-6E468A247504" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=06C7E4E2-F862-4BCF-9B0C-6E468A247504" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=06C7E4E2-F862-4BCF-9B0C-6E468A247504" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE005</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>河川復育達人專欄</td>
+                                        <td>本資料集包含蒐集相關河川水質與生態、河川生態、魚道概說、親水遊憩、河岸植生、生態觀察/旅遊、河川廊道、生態工程、河川景觀整治工程、河川生態保育、教育等河川復育、保育相關文章。本資料集係由水利署資訊室臺灣河川復育網資料庫管理系統所提供。主要以「預知民眾需求」、「環境教育」、「學術研究」為導向配合水利署提出知相關主題，聘請河川復育生態相關領域之專家、達人、學者進行邀稿。每年不定期收錄相關文章。期能透過不同專業觀點增添文章內容豐富度，以「故事性口吻」兼具專業文字感性陳述每一個河川復育或環境教育的歷史來源、生態價值、精神內涵或搭配性生態旅遊路線，並以照片圖像及文字的搭配作為版面安排，進行深度內容撰寫。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/riverrestorationexpertcolumn" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=69BC6EB2-CD0D-453B-A5C2-23BB3B090A97" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=69BC6EB2-CD0D-453B-A5C2-23BB3B090A97" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=69BC6EB2-CD0D-453B-A5C2-23BB3B090A97" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE006</td>
+                                        <td>水利規劃試驗所</td>
+                                        <td>河川規劃課</td>
+                                        <td>水利署兩棲類調查資料</td>
+                                        <td>本資料集主要包含調查所在的流域、河川、樣點、日期、物種、使用方法以及數量。本資料集係由水利署水利規劃試驗所河川情勢調查資料庫管理系統所提供，彙整統合水利署歷年所完成之河川情勢資料，為河川情勢調查資料統一之管理及查詢網站。期盼作為河川水資源管理，生態環境維護、及對河川區域構造物辦理環境改善規劃需求時之參考資料。本資料及內容關鍵在於物種、位置、時間，讓使用者能進一步分析物種時空分佈。依據河川情勢調查作業要點，調查需滿一年，每季至少一次，調查頻度盡量避免以相鄰月份當作兩季資料。調查時間宜注意各類動物之繁殖期，避免選擇非活躍期間進行調查。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyecologicalsurveydataofamphibia" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=4DA129FE-CC54-4F3D-80D1-509231F35235" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=4DA129FE-CC54-4F3D-80D1-509231F35235" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=4DA129FE-CC54-4F3D-80D1-509231F35235" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE007</td>
+                                        <td>水利規劃試驗所</td>
+                                        <td>河川規劃課</td>
+                                        <td>水利署爬蟲類調查資料</td>
+                                        <td>本資料集主要包含調查所在的流域、河川、樣點、日期、物種、使用方法以及數量。本資料集係由水利署水利規劃試驗所河川情勢調查資料庫管理系統所提供，彙整統合水利署歷年所完成之河川情勢資料，為河川情勢調查資料統一之管理及查詢網站。期盼作為河川水資源管理，生態環境維護、及對河川區域構造物辦理環境改善規劃需求時之參考資料。本資料集內容關鍵在於爬蟲類物種、位置、時間，讓使用者能進一步分析物種時空分佈。依據河川情勢調查作業要點，調查需滿一年，每季至少一次，調查頻度盡量避免以相鄰月份當作兩季資料。調查時間宜注意爬蟲類動物之繁殖期，避免選擇非活躍期間進行調查。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyecologicalsurveydataofreptile" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=C6C40232-9F30-4D34-A35E-0EB91710A238" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=C6C40232-9F30-4D34-A35E-0EB91710A238" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=C6C40232-9F30-4D34-A35E-0EB91710A238" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE008</td>
+                                        <td>水利規劃試驗所</td>
+                                        <td>河川規劃課</td>
+                                        <td>水利署哺乳類調查資料</td>
+                                        <td>本資料集主要包含調查所在的流域、河川、樣點、日期、物種、使用方法以及數量。本資料集係由水利署水利規劃試驗所河川情勢調查資料庫管理系統所提供，彙整統合水利署歷年所完成之河川情勢資料，為河川情勢調查資料統一之管理及查詢網站。期盼作為河川水資源管理，生態環境維護、及對河川區域構造物辦理環境改善規劃需求時之參考資料。本資料及內容關鍵在於物種、位置、時間，讓使用者能進一步分析物種時空分佈。依據河川情勢調查作業要點，調查需滿一年，每季至少一次，調查頻度盡量避免以相鄰月份當作兩季資料。調查方法，中、大型哺乳類採集以足跡、排遺及其他痕跡進行判斷；小型哺乳類之齧齒類與鼩鼱類之採集以穿越線法佈鼠籠；蝙蝠類可運用超音波回聲測錄辨種法進行調查。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyecologicalsurveydataofmammal" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=BEE200B4-7D69-4307-8900-97A517AB9F96" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=BEE200B4-7D69-4307-8900-97A517AB9F96" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=BEE200B4-7D69-4307-8900-97A517AB9F96" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE009</td>
+                                        <td>水利規劃試驗所</td>
+                                        <td>河川規劃課</td>
+                                        <td>水利署陸上昆蟲類調查資料</td>
+                                        <td>本資料集主要包含調查陸上昆蟲類所在的流域、河川、樣點、日期、物種、使用方法以及數量。本資料集係由水利署水利規劃試驗所河川情勢調查資料庫管理系統所提供，彙整統合水利署歷年所完成之河川情勢資料，為河川情勢調查資料統一之管理及查詢網站。期盼作為河川水資源管理，生態環境維護、及對河川區域構造物辦理環境改善規劃需求時之參考資料。本資料集內容關鍵在於陸上昆蟲類物種、位置、時間，讓使用者能進一步分析物種時空分佈。依據河川情勢調查作業要點，調查需滿一年，每季至少一次，調查頻度盡量避免以相鄰月份當作兩季資料。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyecologicalsurveydataofinsecta" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=2AA6C444-E34C-4BCE-80AC-9DBEFA71701E" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=2AA6C444-E34C-4BCE-80AC-9DBEFA71701E" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=2AA6C444-E34C-4BCE-80AC-9DBEFA71701E" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE010</td>
+                                        <td>水利規劃試驗所</td>
+                                        <td>河川規劃課</td>
+                                        <td>水利署魚類調查資料</td>
+                                        <td>本資料集主要包含調查魚類所在的流域、河川、樣點、日期、物種、使用方法以及數量。本資料集係由水利署水利規劃試驗所河川情勢調查資料庫管理系統所提供，彙整統合水利署歷年所完成之河川情勢資料，為河川情勢調查資料統一之管理及查詢網站。期盼作為河川水資源管理，生態環境維護、及對河川區域構造物辦理環境改善規劃需求時之參考資料。本資料集內容關鍵在於魚類物種、位置、時間，讓使用者能進一步分析物種時空分佈。依據河川情勢調查作業要點，調查需滿一年，每季至少一次，調查頻度盡量避免以相鄰月份當作兩季資料。調查時間宜把握各魚類之產卵期、洄游期、活動期。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyecologicalsurveydataoffish" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=A213887E-08F3-446E-8C62-23DDA4887EF4" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=A213887E-08F3-446E-8C62-23DDA4887EF4" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=A213887E-08F3-446E-8C62-23DDA4887EF4" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE011</td>
+                                        <td>水利規劃試驗所</td>
+                                        <td>河川規劃課</td>
+                                        <td>水利署鳥類調查資料</td>
+                                        <td>本資料集主要包含調查所在的流域、河川、樣點、日期、物種、使用方法以及數量。本資料集係由水利署水利規劃試驗所河川情勢調查資料庫管理系統所提供，彙整統合水利署歷年所完成之河川情勢資料，為河川情勢調查資料統一之管理及查詢網站。期盼作為河川水資源管理，生態環境維護、及對河川區域構造物辦理環境改善規劃需求時之參考資料。本資料及內容關鍵在於物種、位置、時間，讓使用者能進一步分析物種時空分佈。依據河川情勢調查作業要點，一年調查期間至少二次。調查時間宜區分繁殖季與非繁殖季。在候鳥出現之地區應增加不同遷徙期之調查，每次遷徙期調查二次。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyecologicalsurveydataofaves" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=9F6A1BEE-1ADC-4EA2-8119-72A1FF241A3B" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=9F6A1BEE-1ADC-4EA2-8119-72A1FF241A3B" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=9F6A1BEE-1ADC-4EA2-8119-72A1FF241A3B" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE012</td>
+                                        <td>水利規劃試驗所</td>
+                                        <td>河川規劃課</td>
+                                        <td>水利署植物調查資料</td>
+                                        <td>本資料集主要包含調查所在的流域、河川、樣點、日期、物種、使用方法以及數量。本資料集係由水利署水利規劃試驗所河川情勢調查資料庫管理系統所提供，彙整統合水利署歷年所完成之河川情勢資料，為河川情勢調查資料統一之管理及查詢網站。期盼作為河川水資源管理，生態環境維護、及對河川區域構造物辦理環境改善規劃需求時之參考資料。本資料及內容關鍵在於物種、位置、時間，讓使用者能進一步分析物種時空分佈。依據河川情勢調查作業要點，一年調查期間至少二次。調查時間宜把握植物開花期、結果期，以利鑑別物種。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyecologicalsurveydataofplantae" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=BAEDFB07-EFEB-4EC4-9B52-E94AB928D133" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=BAEDFB07-EFEB-4EC4-9B52-E94AB928D133" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=BAEDFB07-EFEB-4EC4-9B52-E94AB928D133" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE013</td>
+                                        <td>水利規劃試驗所</td>
+                                        <td>河川規劃課</td>
+                                        <td>水利署蝦蟹貝類調查資料</td>
+                                        <td>本資料集主要包含調查所在的流域、河川、樣點、日期、物種、使用方法以及數量。本資料集係由水利署水利規劃試驗所河川情勢調查資料庫管理系統所提供，彙整統合水利署歷年所完成之河川情勢資料，為河川情勢調查資料統一之管理及查詢網站。期盼作為河川水資源管理，生態環境維護、及對河川區域構造物辦理環境改善規劃需求時之參考資料。本資料集內容關鍵在於蝦蟹貝類物種、位置、時間，讓使用者能進一步分析物種時空分佈。依據河川情勢調查作業要點，調查需滿一年，每季至少一次，調查頻度盡量避免以相鄰月份當作兩季資料。調查時間宜注意蝦蟹貝類動物之繁殖期，避免選擇非活躍期間進行調查。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyecologicalsurveydataofprawncrab" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=B323C38B-DB69-4E00-A557-387FF148C1B9" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=B323C38B-DB69-4E00-A557-387FF148C1B9" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=B323C38B-DB69-4E00-A557-387FF148C1B9" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE014</td>
+                                        <td>水利規劃試驗所</td>
+                                        <td>河川規劃課</td>
+                                        <td>水利署藻類調查資料</td>
+                                        <td>本資料集主要包含調查所在的流域、河川、樣點、日期、物種、使用方法以及數量。本資料集係由水利署水利規劃試驗所河川情勢調查資料庫管理系統所提供，彙整統合水利署歷年所完成之河川情勢資料，為河川情勢調查資料統一之管理及查詢網站。期盼作為河川水資源管理，生態環境維護、及對河川區域構造物辦理環境改善規劃需求時之參考資料。本資料集內容關鍵在於藻類物種、位置、時間，讓使用者能進一步分析物種時空分佈。依據河川情勢調查作業要點，調查需滿一年，每季至少一次，調查頻度盡量避免以相鄰月份當作兩季資料。藻類分為浮游性及附著性藻類，河川上游之浮游性藻類較少有紀錄，其調查必要性可視個案斟酌；河川下游之附著性藻類較少有紀錄，其調查必要性可視個案斟酌。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyecologicalsurveydataofalgae" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=56023FF3-AC62-430B-9FF3-6DB75A80B3EF" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=56023FF3-AC62-430B-9FF3-6DB75A80B3EF" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=56023FF3-AC62-430B-9FF3-6DB75A80B3EF" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE015</td>
+                                        <td>經濟部水利署</td>
+                                        <td>資訊室</td>
+                                        <td>河川專題文章</td>
+                                        <td>本資料集包含蒐集相關親水、河川復育、河川景觀整治工程、河川、水資源保育、水源、生態工程、生態保育、防災、節水、水文、教育、工程等水利生態相關文章。本資料集係由水利署資訊室水利知識服務網資料庫管理系統所提供。主要以「預知民眾需求」、「環境教育」、「學術研究」為導向配合水利署提出知相關主題，聘請水利生態相關領域之專家、達人、學者進行邀稿。每年不定期收錄相關文章。期能透過不同專業觀點增添文章內容豐富度，以「故事性口吻」兼具專業文字感性陳述每一個河川復育或環境教育的歷史來源、生態價值、精神內涵或搭配性生態旅遊路線，並以照片圖像及文字的搭配作為版面安排，進行深度內容撰寫。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/rivertopicarticle" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=4D078731-B96E-427B-86DD-D2918A1E6087" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=4D078731-B96E-427B-86DD-D2918A1E6087" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=4D078731-B96E-427B-86DD-D2918A1E6087" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE016</td>
+                                        <td>經濟部水利署</td>
+                                        <td>保育事業組</td>
+                                        <td>水源保育與回饋計畫執行成果經費統計(鄉鎮市區公所)</td>
+                                        <td>依自來水法第12-2條規定所徵收之水源保育與回饋費，由各保護區成立專戶運用小組管理運用，專供水質水量保護區內辦理水資源保育與環境生態保育基礎設施、居民公共福利回饋及受限土地補償之用，其支用項目依自來水法第12條之2第3項規定如下：一、辦理水資源保育、排水、生態遊憩觀光設施及其他水利設施維護管理事項。二、辦理居民就業輔導、具公益性之水資源涵養與保育之地方產業輔導、教育獎助學金、醫療健保及水電費等公共福利回饋事項。三、發放因水質水量保護區之劃設，土地受限制使用之土地所有權人或相關權利人補償金事項。四、原住民族地區租稅補助事項。五、供緊急使用之準備金。六、徵收水源保育與回饋費之相關費用事項。七、使用水源保育與回饋費之必要執行事項。八、其他有關居民公益及水資源教育、研究與保育事項。本開放資料係由水利署彙整統計水質水量保護區內之鄉鎮市區公所歷年水源保育與回饋計畫執行情形，包含各款項之執行經費及比例。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourceconservationandcompensationfundstatistics(towncityanddistrictoffice)" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=F7E30126-EB55-4196-BDD8-4B240683EF58" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=F7E30126-EB55-4196-BDD8-4B240683EF58" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=F7E30126-EB55-4196-BDD8-4B240683EF58" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE017</td>
+                                        <td>經濟部水利署</td>
+                                        <td>土地管理組</td>
+                                        <td>水利署轄管河川或排水綠美化場地已認養維護管理案件表</td>
+                                        <td>本資料內容蒐集本年度經濟部水利署辦理已認養維護轄管河川或排水等綠美化水岸土地資訊，其資料內容包含：項次、綠美化場地名稱、實際地點、面積〈公頃〉、維護管理單位及備註等。上述資訊可以讓民眾更加瞭解經濟部水利署年度執行綠美化水岸土地維護成果及可供周遭民眾休閒遊憩使用之河川或排水綠美化場地資訊，也可讓民眾瞭解本年度民間企業、團體或機構協助政府辦理綠美化場地清潔維護工作，以提昇其社會形象，並鼓勵更多單位及機關（構）、團體或企業認養加入認養行列。另外本資料集每年會更新1次，以讓民眾知悉現有已認養綠美化場地相關內容。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyriverordrainagegreenificationadoptedcases" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=B1AF68AA-7065-4C5F-8534-68B081DF3354" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=B1AF68AA-7065-4C5F-8534-68B081DF3354" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=B1AF68AA-7065-4C5F-8534-68B081DF3354" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE018</td>
+                                        <td>經濟部水利署</td>
+                                        <td>土地管理組</td>
+                                        <td>水利署轄管河川綠美化場地可開放認養維護管理案件表</td>
+                                        <td>本資料蒐集105年度經濟部水利署各所屬機關可開放認養維護轄管河川或排水等綠美化水岸土地相關資料，其資料內容為：項次、場地名稱、場地實際位置、面積（公頃）、現辦理綠美化場地維護管理工作單位、執行機關、備註等，上述資訊可以讓民眾瞭解經濟部水利署年度執行綠美化水岸土地維護成果及可供周遭民眾休閒遊憩使用之河川或排水綠美化場地資訊，另開放資料備註欄，提供申請認養河川或排水綠美化水岸土地資格及申請認養清潔維護綠美化場地工作應洽何單位辦理。另本資料每年會更新1次，以讓民眾知悉現有可開放認養維護河川或排水綠美化場地相關資訊。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencyrivergreenificationadoptablecases" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=348F5520-AA9F-4D3A-9429-C475DA388CEC" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=348F5520-AA9F-4D3A-9429-C475DA388CEC" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=348F5520-AA9F-4D3A-9429-C475DA388CEC" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE019</td>
+                                        <td>經濟部水利署</td>
+                                        <td>水文技術組</td>
+                                        <td>水利署地層下陷磁環分層監測井基本資料</td>
+                                        <td>本資料集提供全臺水利署所屬之磁環分層監測井（簡稱地陷監測井）基本資訊。地陷監測井之量測原理係將磁性感應環預先錨定於地層不同深度，再利用感應偵測設備，量測每一感應環距地表之深度，並分析各層次之壓縮量，以瞭解地層不同深度之沉陷變化；其特點為可多層且有彈性的設定監測層次、量測精度及穩定性高，耐用性良好，是目前最適用於監測分層地層壓縮變化的儀器之一。截至目前為止，正常觀測之地陷監測井計有51口，其分布於宜蘭、桃園、彰化、雲林、嘉義、台南、高雄、屏東等縣市，每月至現地進行觀測，並最遲於翌年初公布地層下陷監測成果後，完成上年度之資料集內容整理及更新，為避免人為記讀錯誤，技術人員至現場量測時先將資料登錄於制式表格，同時與平版電腦進行比對確認，對於異常之讀數則重覆量測以進行確認。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencycontinuouslandsubsidencemagneticringstationprofile" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=9B3F6811-C66D-4B66-9E86-B0E088E818B8" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=9B3F6811-C66D-4B66-9E86-B0E088E818B8" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=9B3F6811-C66D-4B66-9E86-B0E088E818B8" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE020</td>
+                                        <td>經濟部水利署</td>
+                                        <td>水文技術組</td>
+                                        <td>水利署地層下陷磁環分層監測井監測資訊</td>
+                                        <td>地層下陷監測資訊中之磁環分層監測井（簡稱地陷監測井）資訊係指將磁性感應環預先錨定於地層不同深度，再利用感應偵測設備，量測每一感應環距地表之深度，並分析各層次之壓縮量，以瞭解地層不同深度壓縮變化之資訊；其特點為可多層且有彈性的設定監測層次、量測精度及穩定性高，耐用性良好，是目前最適用於監測分層地層壓縮變化的儀器。截至目前為止，正常觀測之地陷監測井計有51口，其分布於宜蘭、桃園、彰化、雲林、嘉義、台南、高雄、屏東等縣市，經水利署逐次審查通過後，於每年公布正式監測資料，其中資料欄位「地層壓縮量」若為9999代表該磁環失效。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencycontinuouslandsubsidencemagneticringstationsubsidenceobservationdata" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=1D1A972C-53B2-4626-87BA-2EC42AA9F5F8" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=1D1A972C-53B2-4626-87BA-2EC42AA9F5F8" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=1D1A972C-53B2-4626-87BA-2EC42AA9F5F8" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE021</td>
+                                        <td>經濟部水利署</td>
+                                        <td>水文技術組</td>
+                                        <td>水利署地層下陷深層水準樁基本資料</td>
+                                        <td>本資料集提供全臺水利署所屬之深層水準樁基本資訊，深層水準樁使用之自動量測系統包含電子式變位計與自動式記錄器，其中系統外接太陽能電源搭配蓄電池模組，透過訊號線連接自動量測地表至地底特定深度間之地層壓縮量；現場可以設定量測頻率（例如每小時量測一次）及啟動週期，數據資料儲存於自動記錄器，並定期將深層水準樁訊號回傳控制中心進行資料儲存與資料分析。截至106年底止，正常觀測之深層水準樁共計有3支，後續將陸續於彰化、雲林、嘉義、臺南及屏東地區增設。監測資料經審核通過後，預計於翌年初公布相關監測成果，並完成資料上傳程序。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencylandsubsidencedeepbenchmarkprofile" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=FE4C64D0-6141-4DA6-9984-424BF3843FBB" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=FE4C64D0-6141-4DA6-9984-424BF3843FBB" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=FE4C64D0-6141-4DA6-9984-424BF3843FBB" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE022</td>
+                                        <td>經濟部水利署</td>
+                                        <td>水文技術組</td>
+                                        <td>水利署地層下陷深層水準樁監測資訊</td>
+                                        <td>提供全臺地層下陷地區深層水準樁之監測資訊，讓使用者瞭解現有深層水準樁於對應深度壓縮結果之連續監測資料。截至105年度止，水利署共計建置3支深層水準樁，包括雲林縣土庫鎮土庫國中深度130及300公尺、雲林縣土庫鎮秀潭國小深度70公尺，未來將持續於彰化、雲林、嘉義、臺南及屏東地區地層下陷區評估增設深層水準樁之必要性。深層水準樁提供單一測站由地表至地下特定深度地層壓縮變化之連續監測資料，無法代表整個監測地點之地層壓縮變化。該年度監測資料經審核通過後，預計於翌年初公布相關監測成果，並完成上年度資料集內容之整理及更新。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencylandsubsidencedeepbenchmarkobservationdata" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=E8CE53B2-E494-434C-86E9-39018C0A4B88" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=E8CE53B2-E494-434C-86E9-39018C0A4B88" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=E8CE53B2-E494-434C-86E9-39018C0A4B88" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE023</td>
+                                        <td>經濟部水利署</td>
+                                        <td>水文技術組</td>
+                                        <td>水利署地層下陷累積下陷量等值線</td>
+                                        <td>本資料提供台北地區83年至103年、彰化地區81年至105年、彰化地區90年至105年、雲林地區81年至105年、雲林地區88年至105年、嘉義地區80年至105年、嘉義地區93年至105年、宜蘭地區81年至103年、台南地區90年至103年、高雄地區95年至105年、屏東地區83年至105年及屏東地區90年至105年之地層下陷地區累積下陷量資訊，讓使用者瞭解歷年地層下陷時間區段資料與其對應的下陷量值。可從下陷量判斷鄉鎮地區的地層下陷速率為逐漸減緩或逐年提升，並針對逐年提升或下陷量較嚴重之地區進一步規劃防治措施或相關應變政策，以減少災害來臨時所帶來之衝擊效應及高速鐵路之營運安全。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencylandsubsidenceaccumulatedvalueisopleth" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=51848764-A6F3-4342-8221-783FCC2DB0F0" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=51848764-A6F3-4342-8221-783FCC2DB0F0" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=51848764-A6F3-4342-8221-783FCC2DB0F0" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE024</td>
+                                        <td>經濟部水利署</td>
+                                        <td>水文技術組</td>
+                                        <td>水利署地層下陷平均下陷速率等值線</td>
+                                        <td>本資料提供民國90年至91年、民國91年至92年、民國92年至93年、民國93年至94年、民國94年至95年、民國95年至96年、民國96年至97年、民國97年至98年、民國98年至99年、民國99年至100年、民國100年至101年、民國101年至102年、民國102年至103年、民國103年至104年、民國104年至105年之苗栗縣、台南市、高雄市、台北市、台中市、屏東縣、彰化縣、嘉義縣、桃園市、宜蘭縣及雲林縣等地區平均下陷速率資訊（部分地區並無每年均有資料），讓使用者瞭解該年度地層下陷分布範圍與平均下陷速率量值。該年度平均下陷速率經審核通過後，預計於翌年初公布相關成果，並完成上年度資料集內容之整理及更新。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/waterresourcesagencylandsubsidenceaveragerateisopleth" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=B611E1DE-DEB7-49DE-A0FA-60E4641433AD" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=B611E1DE-DEB7-49DE-A0FA-60E4641433AD" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=B611E1DE-DEB7-49DE-A0FA-60E4641433AD" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE025</td>
+                                        <td>第八河川局</td>
+                                        <td>管理課</td>
+                                        <td>卑南溪種植區域等級劃分</td>
+                                        <td>根據現行最新修訂公告之河川區域種植規定，八河局於105年度完成卑南溪水系種植區域分級劃設。將河川區域之可種植區域劃分為五等級。本資料將五個等級劃分之各區域以圖幅表示。民眾可先閱覽初步瞭解所使用土地位於哪個區域及其劃分等級並可知曉依法令可種植之植物。目前卑南溪水系種植區域等級大多為第四級或第五級。另依據河川管理辦法第三十七條第四款禁止種植區域「其他為確保河防安全，或配合環境營造、生態保育工作，經河川管理機關公告禁止種植之區域。」考量鹿野溪上游區段屬山區河段，流速介於4.1(公尺/秒)至18.29(公尺/秒)，且河寬皆小於300公尺，為維護河川環境生態避免人為干擾，業於106年3月公告鹿野溪舊鹿鳴橋至清水大橋河段為禁止種植區域。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/classificationofplantingareaofbeinanbrook" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=BD56A613-D50D-4C99-8F19-A5A8CD448DEE" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=BD56A613-D50D-4C99-8F19-A5A8CD448DEE" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=BD56A613-D50D-4C99-8F19-A5A8CD448DEE" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE026</td>
+                                        <td>北區水資源局</td>
+                                        <td>計畫課</td>
+                                        <td>石門水庫濁度資料</td>
+                                        <td>石門水庫位於大漢溪中游，地處桃園市大溪區與龍潭區、復興區、新竹縣、關西鎮之間，由於溪口處有雙峰對峙狀若石門，因而得名。其興建緣由，主要是因為大漢溪上游陡峻，無法涵蓄水源，延及下游各地區常遭水旱之苦；政府為解決民困、發展農業、興修水利，自民國四十五年七月展開興建石門水庫工作，並於五十三年六月完工，歷時八載，參加員工七千餘人，建設經費約達新台幣三十二億元，水庫總長度為十六．五公里，滿水位面積八平方公里，有效蓄水量約二億七百萬立方公尺，為一多目標水利工程，具有灌溉、發電、給水、防洪、觀光等效益。主要工程可分為大壩、溢洪道、排洪隧道、電廠、後池及後池堰、石門大圳及桃園大圳進水口等結構物，自完工營運以來，對北部地區農業生產之改良，工業之發展，人民生活水準提高，以及防止水旱災害等方面均有重大貢獻。近年來環保意識高漲，北區水資源局為供應民生及農、工業之用水需求，除積極辦理集水區治理及環境保護工作，防止水源污染；並提倡全民節約用水之觀念，共同珍惜水資源。本資料集為提供石門水庫濁度資料，方便民眾了解水庫濁度狀況。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/shimenreservoirturbidity" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=2E684C4D-8ADF-43FC-A892-A2A4E9B68F8F" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=2E684C4D-8ADF-43FC-A892-A2A4E9B68F8F" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=2E684C4D-8ADF-43FC-A892-A2A4E9B68F8F" target="_blank">點我</a></td>
+                                    </tr>                                   
+                                   <tr>
+                                        <td>DE027</td>
+                                        <td>北區水資源局</td>
+                                        <td>計畫課</td>
+                                        <td>寶山第二水庫濁度資料</td>
+                                        <td>有鑒於新竹地區工商業的迅速發展、科學園區的產業欣欣向榮，吸引大量外來人口，導致公共及工業用水量與日俱增，用水的需求量早已不是寶山水庫、永和山水庫能夠承擔負荷的。因此，為增進新竹地區水源的供應，經濟部水利署、台灣自來水公司與新竹縣政府共同興建寶山第二水庫。 寶山第二水庫於民國76年開始規劃，民國86年開始實施，至民國95年6月正式完工。寶山第二水庫為一典型的離槽式水庫，壩高61公尺，壩頂長345公尺，壩頂標高154公尺，總有效蓄水量3,218萬噸。 寶山水庫加上寶山第二水庫，兩者聯合運用，可個別取水或聯通存蓄而同時送水至寶山淨水廠處理，如此一來，每日可增加供水量28.2萬噸，每年可增加供水量1.02億噸，增加新竹地區水資源之調蓄能力與空間，使新竹當地人民不再受缺水、乾旱之苦，解決新竹地區缺水之問題。本資料集為提供寶山第二水庫濁度資料，方便民眾了解水庫濁度狀況。</td>
+                                        <td><a href="http://wise.wra.gov.tw/dataset/secondbaoshanreservoirturbidity" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=json&amp=&id=0D7BC8EE-05AE-46C3-9E4C-3591F731AC5F" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=xml&amp=&id=0D7BC8EE-05AE-46C3-9E4C-3591F731AC5F" target="_blank">點我</a></td>
+                                        <td><a href="https://data.wra.gov.tw/Service/OpenData.aspx?format=csv&amp=&id=0D7BC8EE-05AE-46C3-9E4C-3591F731AC5F" target="_blank">點我</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- /.table-responsive -->
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+                <!-- /.col-lg-12 -->
+            </div>
+            
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../vendor/metisMenu/metisMenu.min.js"></script>
+
+    <!-- DataTables JavaScript -->
+    <script src="../vendor/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="../vendor/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="../vendor/datatables-responsive/dataTables.responsive.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+            responsive: true,
+            bAutoWidth: false, 
+              aoColumns : [
+                { sWidth: '5%' },
+                { sWidth: '5%' },
+                { sWidth: '5%' },
+                { sWidth: '10%' },
+                { sWidth: '55%' },
+                { sWidth: '5%' },
+                { sWidth: '5%' },
+                { sWidth: '5%' },
+                { sWidth: '5%' }
+              ]
+        });
+
+        // $('#dataTables-example').dataTable( {
+        //   "columns": [
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" },
+        //     { "width": "10%" }
+        //   ]
+        // } );
+    });
+    </script>
+
+</body>
+
+</html>
